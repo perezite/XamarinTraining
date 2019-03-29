@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FirstApp"
+             x:Class="FirstApp.MainPage">
+
+    <StackLayout>
+        <BoxView BackgroundColor="MediumAquamarine"/>
+        <ActivityIndicator IsRunning="True"/>
+
+        <Picker>
+            <Picker.Items>
+                <x:String>Apfel</x:String>
+                <x:String>Banane</x:String>
+            </Picker.Items>
+        </Picker>
+        
+        <Label Text="Welcome to Xamarin.Formzzzz!" x:Name="myLabel" />
+        <Button Text="Test" Clicked="Button_Clicked"/>
+        <Entry Placeholder="Username"/>
+        <Entry Placeholder="Passwort" IsPassword="True"/>
+        <Editor HeightRequest="200" Placeholder="Notizen..."/>
+
+        <Switch IsToggled="False"/>
+        <Slider Minimum="0" Maximum="100"/>
+        <ProgressBar Progress="0.5"/>
+        <Stepper Minimum="0" Maximum="10"/>
+
+        <DatePicker/>
+        <TimePicker/>
+    </StackLayout>
+
+</ContentPage>

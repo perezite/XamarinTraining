@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LayoutContainer"
+             x:Class="LayoutContainer.MainPage">
+
+    <!--<StackLayout BackgroundColor="AliceBlue" Spacing="5"
+                 VerticalOptions="Fill" HorizontalOptions="Fill">
+        <Button Text="Button1"/>
+        <Button Text="Button2"/>
+        <Button Text="Button3"/>
+        <Button Text="Button4" VerticalOptions="EndAndExpand"/>
+        <BoxView BackgroundColor="GreenYellow" VerticalOptions="FillAndExpand"/>
+        <Button Text="Button5" VerticalOptions="EndAndExpand"/>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Ok"/>
+            <Button Text="Abbrechen" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </StackLayout>-->
+
+    <!--<StackLayout BackgroundColor="#127AC7"
+                 VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Spacing="20">
+            <Label Text="Welcome to Xamarin" HorizontalOptions="CenterAndExpand" FontSize="35" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="Cross Platform made easy" HorizontalOptions="CenterAndExpand" FontSize="15" TextColor="White"/>
+            <Button Text="Login" BackgroundColor="#1DABF0"/>
+            <Button Text="Register" BackgroundColor="#1DABF0"/>
+        </StackLayout>
+    </StackLayout>-->
+
+    <!--<Grid BackgroundColor="MediumSeaGreen" RowSpacing="20" ColumnSpacing="20">
+        <BoxView Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="LightSalmon"/>
+        <BoxView Grid.Row="3" BackgroundColor="DarkCyan"/>
+        <BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="MediumPurple"/>
+    </Grid>-->
+
+    <!--<Grid BackgroundColor="LightPink" Margin="5" Padding="10">
+        <Grid.RowDefinitions>
+            --><!--<RowDefinition Height="200"/>--><!--
+            <RowDefinition Height="Auto"/> --><!--Nimm was du brauchst--><!--
+            <RowDefinition Height="1*"/> --><!--Nimm den Rest--><!--
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <Entry Grid.Row="0" Grid.Column="0" Placeholder="Suchtext:"/>
+        <Button Grid.Row="0" Grid.Column="1" Text="Do it"/>
+        <ListView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="FloralWhite"/>
+    </Grid>-->
+
+    <!--<Grid BackgroundColor="DarkGray" RowSpacing="10" ColumnSpacing="10" Padding="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="LabelDialed" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="1234" FontSize="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+        <Button x:Name="Button1" Clicked="NumberButton_Clicked" Grid.Row="1" Grid.Column="0" Text="1" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button2" Clicked="NumberButton_Clicked" Grid.Row="1" Grid.Column="1" Text="2" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button3" Clicked="NumberButton_Clicked" Grid.Row="1" Grid.Column="2" Text="3" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button4" Clicked="NumberButton_Clicked" Grid.Row="2" Grid.Column="0" Text="4" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button5" Clicked="NumberButton_Clicked" Grid.Row="2" Grid.Column="1" Text="5" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button6" Clicked="NumberButton_Clicked" Grid.Row="2" Grid.Column="2" Text="6" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button7" Clicked="NumberButton_Clicked" Grid.Row="3" Grid.Column="0" Text="7" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button8" Clicked="NumberButton_Clicked" Grid.Row="3" Grid.Column="1" Text="8" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button9" Clicked="NumberButton_Clicked" Grid.Row="3" Grid.Column="2" Text="9" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+        <Button x:Name="Button0" Clicked="NumberButton_Clicked" Grid.Row="4" Grid.Column="1" Text="0" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="30"/>
+
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Text="Dial" BorderRadius="30" BackgroundColor="GreenYellow" TextColor="Black" FontSize="30"/>
+
+    </Grid>-->
+
+    <!--<Grid BackgroundColor="DarkGray" RowSpacing="10" ColumnSpacing="10" Padding="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <ResourceDictionary>
+                <x:Double x:Key="DefaultSize">30</x:Double>
+                --><!-- Expliziter Style--><!--
+                <Style TargetType="Button" x:Key="SpecialButtonStyle">
+                    <Setter Property="BackgroundColor" Value="Gray"/>
+                    <Setter Property="TextColor" Value="Blue"/>
+                    <Setter Property="BackgroundColor" Value="Orange"/>
+                    <Setter Property="FontSize" Value="42"/>
+                </Style>
+                --><!-- Impliziter Style (überschreibt alles, was nicht explizit gesetzt wurde)--><!--
+                <Style TargetType="Button">
+                    <Setter Property="BackgroundColor" Value="Yellow"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        
+        <Label x:Name="LabelDialed" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="1234" FontSize="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+        <Button x:Name="Button1" Clicked="NumberButton_Clicked" Grid.Row="1" Grid.Column="0" Text="1" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="{StaticResource DefaultSize}">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <x:Double x:Key="DefaultSize">60</x:Double>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Button2" Clicked="NumberButton_Clicked" Grid.Row="1" Grid.Column="1" Text="2" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="{StaticResource DefaultSize}"/>
+        <Button x:Name="Button3" Clicked="NumberButton_Clicked" Grid.Row="1" Grid.Column="2" Text="3" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="{StaticResource DefaultSize}"/>
+        <Button x:Name="Button4" Clicked="NumberButton_Clicked" Grid.Row="2" Grid.Column="0" Text="4" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="{StaticResource DefaultSize}"/>
+        <Button x:Name="Button5" Clicked="NumberButton_Clicked" Grid.Row="2" Grid.Column="1" Text="5" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="{StaticResource DefaultSize}"/>
+        <Button x:Name="Button6" Clicked="NumberButton_Clicked" Grid.Row="2" Grid.Column="2" Text="6" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="{StaticResource DefaultSize}"/>
+        <Button x:Name="Button7" Clicked="NumberButton_Clicked" Grid.Row="3" Grid.Column="0" Text="7" BorderRadius="30" BackgroundColor="White" TextColor="Black" FontSize="{StaticResource DefaultSize}"/>
+        <Button x:Name="Button8" Clicked="NumberButton_Clicked" Grid.Row="3" Grid.Column="1" Text="8" BorderRadius="30" />
+        <Button x:Name="Button9" Clicked="NumberButton_Clicked" Grid.Row="3" Grid.Column="2" Text="9" BorderRadius="30" Style="{StaticResource SpecialButtonStyle}"/>
+        <Button x:Name="Button0" Clicked="NumberButton_Clicked" Grid.Row="4" Grid.Column="1" Text="0" BorderRadius="30" Style="{StaticResource SpecialButtonStyle}"/>
+
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Text="Dial" BorderRadius="30" BackgroundColor="GreenYellow" TextColor="Black" FontSize="{StaticResource DefaultSize}"/>
+    </Grid>-->
+
+    <!--<StackLayout x:Name="MyLayout" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Style="{DynamicResource CurrentLayoutStyle}">
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Button" x:Key="CurrentButtonStyle"/>
+                <Style TargetType="Button" x:Key="LightButtonStyle">
+                    <Setter Property="BackgroundColor" Value="#1DABF0"/>
+                    <Setter Property="TextColor" Value="Green"/>
+                </Style>
+                <Style TargetType="Button" x:Key="DarkButtonStyle">
+                    <Setter Property="BackgroundColor" Value="DarkBlue"/>
+                    <Setter Property="TextColor" Value="DarkGray"/>
+                </Style>
+
+                <Style TargetType="StackLayout" x:Key="CurrentLayoutStyle"/>
+                <Style TargetType="StackLayout" x:Key="LightLayoutStyle">
+                    <Setter Property="BackgroundColor" Value="LightBlue"/>
+                </Style>
+                <Style TargetType="StackLayout" x:Key="DarkLayoutStyle">
+                    <Setter Property="BackgroundColor" Value="DarkBlue"/>
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Spacing="20">
+            <Label Text="Welcome to Xamarin" HorizontalOptions="CenterAndExpand" FontSize="35" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="Cross Platform made easy" HorizontalOptions="CenterAndExpand" FontSize="15" TextColor="White"/>
+            <Button Text="Login" Style="{DynamicResource CurrentButtonStyle}"/>
+            <Button Text="Register" Style="{DynamicResource CurrentButtonStyle}"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                <Label Text="Dark Mode"/>
+                <Switch Toggled="Switch_Toggled"/>
+            </StackLayout>
+
+        </StackLayout>
+    </StackLayout>-->
+
+
+    <!--<AbsoluteLayout BackgroundColor="Linen">
+        <BoxView BackgroundColor="PaleGreen" 
+           AbsoluteLayout.LayoutFlags="SizeProportional" AbsoluteLayout.LayoutBounds="0,0,1,0.3"/>
+        <BoxView BackgroundColor="DarkSalmon" AbsoluteLayout.LayoutBounds="50, 50, 100, 100"/>
+        <BoxView BackgroundColor="LightSalmon" AbsoluteLayout.LayoutBounds="150, 250, 100, 100"/>
+        <BoxView BackgroundColor="DarkMagenta" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0.5, 1, 0.5"/> --><!-- Position ist in der Mitte des Objekts --><!--
+    </AbsoluteLayout>-->
+
+    <!--<RelativeLayout>
+        <BoxView x:Name="BoxViewHeader" BackgroundColor="Cyan"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=0.333}" 
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=0.333}"/>
+    </RelativeLayout>-->
+
+    <AbsoluteLayout Padding="10" BackgroundColor="White">
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3" AbsoluteLayout.LayoutFlags="SizeProportional" BackgroundColor="LightGray" Padding="40">
+            <Label Text="$19.99" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="50"/>
+            <Button Text="Add $19.99 Credit" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="15" BackgroundColor="DarkSlateGray" BorderRadius="15" />
+        </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 1, 1, 0.7" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" Padding="50">
+            <Label Text="Why pay for credit?" HorizontalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Bold" />
+            <Label Text="Lorem ipsum" HorizontalOptions="CenterAndExpand" TextColor="Black" Margin="50" />
+        </StackLayout>
+    </AbsoluteLayout>
+    
+</ContentPage>

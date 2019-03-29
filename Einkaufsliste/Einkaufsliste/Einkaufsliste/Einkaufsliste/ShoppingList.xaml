@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Einkaufsliste"
+             x:Class="Einkaufsliste.ShoppingList">
+    <StackLayout Margin="20">
+        <StackLayout HorizontalOptions="Fill" Orientation="Horizontal">
+            <Entry x:Name="newProductName" Text="Zahnpasta" Placeholder="Neues Produkt" HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="newProductDate" Placeholder="Geplantes Einkaufsdatum" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="Fill" Orientation="Horizontal">
+            <Button x:Name="saveButton" Text="Speichern" HorizontalOptions="End" Clicked="SaveButton_Clicked"/>
+        </StackLayout>
+        <StackLayout>
+            <ListView x:Name="shoppingList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Description}" Detail="{Binding ShoppingTime, StringFormat='{0:dddd, dd MMMM yyyy}', TargetNullValue='Kein Datum'}">
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Löschen" x:Name="deleteAction" Clicked="DeleteAction_Clicked"/>
+                            </TextCell.ContextActions>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

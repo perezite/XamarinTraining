@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="Shake4Quake.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Shake4Quake.UWP"
+    RequestedTheme="Light">
+
+</Application>
