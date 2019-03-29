@@ -16,6 +16,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button x:Name="refreshButton" Text="Refresh" Clicked="RefreshButton_Clicked"  VerticalOptions="EndAndExpand"/>
     </StackLayout>
 
 </ContentPage>
